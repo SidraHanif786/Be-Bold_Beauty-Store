@@ -1,0 +1,510 @@
+body{
+    padding: 15px;
+    margin: 0;
+}
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 720px) {
+  main h1{
+    font-size: 28px;
+  }
+  main h2{
+    font-size: 25px;
+  }
+  main label,
+  main :placeholder-shown{
+    font-size: 17px !important;
+  }
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* ============     CHECKOUT PAGE       ============= */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.flex-div{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  /* ============== INFORMATION ================ */
+  .info{
+    width: calc(60% - 20px);
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  .info .name{
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #e0dfdf;
+    padding-top: 20px;
+  }
+  
+  .info label{
+    font-size: 18px;
+    color: #232423;
+  }
+  
+  .info input,
+  .info select,
+  .info textarea{
+    width: 100%; 
+    border-style: none;
+    border: 1px solid #b8b4b4;
+    color: #232423;
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+  .info .name input{
+    width: 80%;
+  }
+  .info input:focus {
+    outline: none;
+    border-bottom-color: rgb(210, 152, 212);
+  }
+  
+  input:valid {
+    border: 1px solid rgb(210, 152, 212);
+  }
+  
+  input:invalid {
+    border: 1px solid rgb(248, 112, 112);
+  }
+  
+  .info select{
+    color: #4c4d4c;
+    font-size: 15px;
+  }
+  
+  .info textarea{
+    height: 40px;
+    border-style: none;
+    border: 1px solid #a7a4a4;
+  }
+  
+  
+  /* =============== PLACE ORDER DIV ================ */
+  main .o-container {
+    width: calc(40% - 20px);
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  
+  .o-container fieldset{
+    border: 2px solid rgb(224, 213, 213);
+    padding: 25px;
+  }
+  
+  .o-container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    padding: 10px;
+    font-family: 'Marcellus', sans-serif;
+    font-size: 15px;
+    color: #434443;
+  }
+  
+  .o-container .message {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #434443;
+  }
+  
+  .o-container .button {
+    padding: 10px 20px;
+    background-color: #232423;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .o-container button:hover{
+    background-color: #df8fd1;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  @media screen and (max-width: 850px) {
+    body{
+        padding: 0px 30px;
+    }
+    .flex-div {
+      flex-direction: column;
+    }
+    .info, .o-container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ================HEADER================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+header .container{
+	max-width: 1570px;
+	margin:0px;
+  padding: 0;
+}
+header .row-h{
+  padding: 0px 10px;
+	display: flex;
+  flex-direction: row !important;
+	flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav ul{
+    display: flex;
+    justify-content:space-between;
+}
+header .nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 20px;
+}
+header .nav li:hover{
+    color: rgb(173, 133, 135);
+    border-top: 1px solid;
+}
+header .nav a {
+  display: block;
+  text-decoration: none;
+  color: #232423;
+  transition: all 0.2s ease;
+}
+header .nav a:hover{
+  color: rgb(173, 133, 135);
+}
+
+header .user img{
+  cursor: pointer;
+}
+
+/* ==============NAV TOOGLER ====================== */
+.menu-icon{
+	height: 34px;
+	width: 44px;
+	background-color: #fcf4fb;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 5px;
+}
+.menu-icon:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(231, 169, 169, 0.5);
+}
+.menu-icon span{
+    height: 2px;
+    width: 20px;
+    background-color: rgb(173, 133, 135);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.menu-icon.active span{
+	background-color: transparent;
+}
+.menu-icon span::before,
+.menu-icon span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(173, 133, 135);
+	transition: all 0.3s ease;
+}
+.menu-icon span::before{
+	transform: translateY(-6px);
+}
+.menu-icon.active span::before{
+	transform: rotate(45deg);
+}
+.menu-icon span::after{
+	transform: translateY(6px);
+}
+.menu-icon.active span::after{
+	transform: rotate(135deg);
+}
+
+/* @@@@@@@@@@@@@ HEADER DROPDOWN MENU @@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 920px) {
+  header .user{
+		display: none;
+	}
+  header img{
+		height: 35px;
+    justify-content: center;
+	}
+	header,
+  .container,
+  .row-h{
+		height: 45px;
+	}
+  header .row-h{
+    position: relative;
+  }
+  header .row-h .menu-icon{
+    display: block;
+    position: absolute;
+    right: 5px;
+  }
+
+
+  header .row-h .nav{
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width:100%;
+    z-index: 9999;
+    max-height: 0px;
+    padding: 0px ;
+    overflow: hidden;
+    /* visibility: hidden; */
+    transition: all 0.5s ease;
+    background-color: #fae9e9;
+    border-top:1px solid rgba(161, 159, 159, 0.2);
+  }
+  .header .nav.open{
+    visibility: visible;
+  }
+	header .nav ul{
+    display: flex;
+    flex-direction: column;
+	  }
+	  header .nav ul li{
+		border-bottom: 1px solid #d3d4d3;
+    margin: 0;
+	  }
+	  header .nav li:hover{
+		border-top: none;
+    border-bottom: 1px solid rgb(160, 122, 124);
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ===================== FOOTER ===================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+footer{
+  background-color: rgb(246,237,240);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+footer .subscribe{
+  padding: 3% 2%;
+  border-bottom : 1px solid rgb(224, 202, 218);
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px 40px;*/
+} 
+footer .subscribe button{
+  background-color: black;
+  width: 185px;
+  height: 35px;
+}
+footer .subscribe p{
+  font-family: 'Marcellus', sans-serif;
+  font-size: 30px;
+}
+.sub{
+  border-color: black;
+  color: white;
+}
+.sub:hover{
+  background-color: rgb(212,166,182);
+  border-color:rgb(212,166,182);
+  color: white;
+}
+footer .subscribe input{
+  padding: 5px 0px;
+}
+footer .subscribe input:focus{
+outline: none;
+  border-color: #b9b9b9;
+}
+/* ======= FOOTER LINKS ======== */
+footer .links{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgb(224, 202, 218);
+  padding: 3% 2%
+}
+footer .bs{
+  display: flex;
+}
+footer .footer-links nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-links li {
+  list-style: none;
+  text-decoration: none;
+  /* margin-right: 20px; */
+}
+
+footer .footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  color: #8d6b7e;
+}
+footer .footer-text{
+  padding: 1% 2%;
+}
+
+/* ========== SOCIAL MEDIA ======== */
+footer .social-media{
+margin-right: 28px;
+}
+.fa {
+  padding: 2px;
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.fa-facebook {
+  background: rgb(39, 39, 39);
+  color: white;
+}
+.fa-twitter {
+  font-size: 17px;
+  background: rgb(246,237,240);
+  color: rgb(55, 121, 243);
+}
+.fa-instagram {
+  background: rgb(39, 39, 39);
+  color: white;
+}
+.fa-twitter:hover{
+  background: white;
+  color: #ec71d2; 
+}
+.fa-instagram {
+  background: rgb(39, 39, 39);
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+  background-color: #f08fdb;
+  color: white;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ================== FOOTER RESPONSIVE ==================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2@2 */
+
+@media screen and (max-width: 600px) {
+footer .subscribe p{
+  font-size: 20px;
+}
+footer .subscribe{
+  padding: 2% 2%;
+} 
+footer .subscribe .sub-input{
+  width: 200px;
+  padding-left: 50px;
+}
+footer .subscribe input{
+  padding: 3px 0px;
+  width: 150px;
+  margin-bottom: 8px;
+}
+footer .subscribe button{
+  background-color: #232423;
+  width: 150px;
+  height: 25px;
+
+}
+footer .footer-text{
+  padding: 1% 2%;
+  font-size: 15px;
+}
+footer img{
+height: 35px;
+}
+footer .social-media{
+margin-right: 0px;
+}
+/* =======LINK SECTION ========= */
+footer .links{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(224, 202, 218);
+  padding: 2% 2%
+}
+footer .bs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footer-links ul{
+  padding: 0;
+}
+}
+/* =========== SMALL MOBILE SCREN ================ */
+
+@media screen and (max-width: 460px) {
+  footer .subscribe p{
+    font-size: 18px;
+  }
+  footer .subscribe{
+    display: flex;
+    flex-direction: column;
+  } 
+  footer .subscribe .sub-input{
+    width: 100%;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  footer .footer-text{
+    padding: 1% 2%;
+    font-size: 10px;
+  }
+  footer .links{
+    font-size: 15px;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@======== FOOTER END =======@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+

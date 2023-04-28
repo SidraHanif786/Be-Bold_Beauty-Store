@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+     <!-- marcelus font -->
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- social media links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ======= HEADER ========== -->
+    <header>
+        <div class="container">
+            <div class="row-h">
+                <div>
+                    <img src="/Images/new/logo-regular.png" alt="Logo">
+                </div>
+                <button type="button" class="menu-icon">
+                    <span></span>
+                </button>
+                <!-- <div> -->
+                <nav class="nav">
+                    <ul>
+                        <li><a href="home.html" target="_blank">SHOP ALL</a></li>
+                        <li><a href="home.html" target="_blank">HOME</a></li>
+                        <li><a href="product.html" target="_blank">PRODUCT</a></li>
+                        <li><a href="cart.html" target="_blank">CART</a></li>
+                        <li><a href="checkout.html" target="_blank">CHECKOUT</a></li>
+                        <li><a href="home.html" target="_blank">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <!-- </div> -->
+                <div class="user" style="margin-top: 0px;">
+                    <img style="padding-bottom: 0; height: 22px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAy0lEQVR4nLWSOwoCMRRFT6dgaylqbaOtG1DstRO3IYittmLjYmRs/LS6CUcr3YBg5MGbIYQJEwe9cAkvefeEfODPGgA74ApEQP9bwAR4A8ay1ONQQBl4OoDED6AUAul4AInbIZBmDqQReqTIA9iGhLvAAqgDFwdwBmrAUvsyJU/40sAKqAAjYAoMtV7ruvT1XEBVb95YvgEbYKbjPeOlJJdqnnOZxmPZINWpIGRvQ+KCkNiG+H6oybHkUh0LQg42pKUTQg619EvuN/oAbsuRm0LDTfsAAAAASUVORK5CYII=" style="height: 24px;">
+                    <span style="font-weight: bold; font-size: 20px; padding-left: 18px; padding-bottom: 10px; margin-top: 0;">$0.00</span>
+                    <a href="/html/cart.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABFUlEQVR4nO2WPWoCURRGT6VbiO5AN5EsQNE0WYLuIFrEMmBjlqCFWYLp/CtiiriEZAk2oilEwXDhTSMz8d3Hu0LAA7eZD+53mJnHDPxT6sAc+AG2wBSoXKq8Cxwz5tm6vOaKdsAjUHTTctckq1oKzFyJFJ7Scpk8DjO2rqSQkt24bGMpcHQTml8F1ExOjllC1jFMy8cEUvAs8MnlBVVzF1HgNkSgGVGgESLw8keRdnohAm8RBUYhAt8RBb605TlgH1HgAOQ1AuWI5cmUNAL3BgLyE+NN20Ag7ROeycBAoI+CDwOBhUZgZSAgO6948WBw+5OR3WfpGAo8+Qi8GgoMfQSWhgKfPgJrQwHZfZaFocC7j8BF+QU5arVkl9CPpQAAAABJRU5ErkJggg==" style="height: 26px; padding-bottom: 0;"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============ MAIN ================== -->
+    <main>
+        <h1>Checkout</h1>
+        <div class="flex-div">
+            <div class="info">
+                <form action="">
+                    <h2 style="margin-bottom: 10px;">Billing details</h2>
+                    <div class="name">
+                        <div>
+                            <label for="fname">First Name:</label><br>
+                            <input type="text" id="fname" name="fname" class="line" required>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name:</label><br>
+                            <input type="text" id="lname" name="lname" class="line" required>
+                        </div> 
+                    </div>
+                    <br>
+                    <label for="company">Company name (optional):</label><br>
+                    <input type="text" id="company" name="company"><br><br>
+                    
+                    <label for="country">Country / Region:</label><br>
+                    <select id="country" name="country">
+                        <option value="">--Select a country--</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="United States">United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Australia">Australia</option>
+                        <option value="India">India</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Italy">Italy</option>
+                    </select><br><br>
+
+                    <label for="address">Street address:</label><br>
+                    <input type="text" id="address" name="address" placeholder="House number and street name"><br><br>
+                    <input type="text" id="apartment" name="apartment" placeholder="Apartment, suite, unit, etc. (optional)"><br><br>
+
+                    <label for="city">Town / City:</label><br>
+                    <input type="text" id="city" name="city"><br><br>
+
+                    <label for="state">State / County:</label><br>
+                    <select name="city" id="city" required>
+                        <option value="">Select your city</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="islamabad">Islamabad</option>
+                        <option value="rawalpindi">Rawalpindi</option>
+                        <option value="faisalabad">Faisalabad</option>
+                        <option value="peshawar">Peshawar</option>
+                        <option value="multan">Multan</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="quetta">Quetta</option>
+                        <option value="sialkot">Sialkot</option>
+                    </select>
+                    <br><br>
+
+                    <label for="postcode">Postcode / ZIP:</label><br>
+                    <input type="text" id="postcode" name="postcode"><br><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="text" id="phone" name="phone"><br><br>
+
+                    <label for="email">Email address:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                </form>
+                    
+                <h2>Additional information</h2>
+                <label for="notes">Order notes (optional):</label><br>
+                <textarea id="notes" name="notes" placeholder="Notes about your order, e.g. special notes for delivery"></textarea><br><br>
+            </div>
+            <!-- ============ ORDER CONTAINER ============ -->
+            <div class="o-container">
+                <fieldset>
+
+                    <h2>Your Order</h2>
+                    <div class="row header">
+                        <div>Product</div>
+                        <div>Subtotal</div>
+                    </div>
+                    <div class="row">
+                        <div>Product Name</div>
+                        <div>₨ 00.00</div>
+                    </div>
+                    <div class="row">
+                        <div >Subtotal</div>
+                        <div >₨ 00.00</div>
+                    </div>
+                    <div class="row">
+                        <div >Total</div>
+                        <div >₨ 00.00</div>
+                    </div>
+                    <div class="message">
+                        <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span style="color: black;">privacy policy</span>.</p>
+                    </div>
+                    <button class="button">PLACE ORDER</button>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="subscribe">
+            <p>Subscribe to our newsletter</p>
+            <div><input type="email" placeholder="Your email address"><button class="sub">SUBSCRIBE</button></div>
+        </div>
+        <!-- ====== FOOTER SECOND DIV (LINKS) ====== -->
+        <div class="links">
+            <div class="footer-logo"><img src="/Images/new/logo-regular.png" alt="Logo"></div>
+            <div class="bs">
+                <nav class="footer-links">
+                    <ul>
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Hair Care</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-links">
+                    <ul>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="footer-text">
+            Copyright &copy; 2023 Be Bold | Powered by Be Bold</div>
+    </footer>
+    <script src="/javascript/index.js"></script>
+</body>
+</html>

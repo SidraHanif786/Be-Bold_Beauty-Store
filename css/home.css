@@ -1,0 +1,1070 @@
+body{
+    padding: 15px;
+    margin-top: 0;
+    font-size: 15px;
+    width: 100%;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+div {
+    margin-bottom: 10px;
+}
+.font{
+    font-family: 'Marcellus', sans-serif;
+    font-size: 25px;
+}
+.heading{
+    font-size: 60px;
+    font-weight: 500;
+}
+.heading2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.font2{
+    font-family: 'Marcellus', sans-serif;
+    font-size: 18px;
+}
+.bold{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 920px) and (min-width: 550px) {
+  body{
+    font-size: 12px;
+}
+  .font{
+    font-size: 20px;
+}
+.heading{
+    font-size: 42px;
+}
+.heading2{
+    font-size: 30px;
+}
+.font2{
+    font-size: 12px;
+}
+.bold{
+    font-size: 35px;
+}
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 550px) {
+  body{
+    font-size: 10px;
+}
+  .font{
+    font-size: 18px;
+}
+.heading{
+    font-size: 40px;
+}
+.heading2{
+    font-size: 27px;
+}
+.font2{
+    font-size: 10px;
+}
+.bold{
+    font-size: 30px;
+}
+}
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ================HEADER================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+header .container{
+	max-width: 1570px;
+	margin:0px;
+  padding: 0;
+}
+header .row-h{
+  padding: 0px 10px;
+	display: flex;
+  flex-direction: row !important;
+	flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+    justify-content:space-between;
+}
+header .nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 20px;
+}
+header nav li:hover{
+    color: rgb(173, 133, 135);
+    border-top: 1px solid;
+}
+header .nav a {
+  display: block;
+  text-decoration: none;
+  color: #232423;
+  transition: all 0.2s ease;
+}
+header .nav a:hover{
+  color: rgb(173, 133, 135);
+}
+
+header .user img{
+  cursor: pointer;
+}
+
+/* ==============NAV TOOGLER ====================== */
+.menu-icon{
+	height: 34px;
+	width: 44px;
+	background-color: #fcf4fb;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 5px;
+}
+.menu-icon:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(231, 169, 169, 0.5);
+}
+.menu-icon span{
+    height: 2px;
+    width: 20px;
+    background-color: rgb(173, 133, 135);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.menu-icon.active span{
+	background-color: transparent;
+}
+.menu-icon span::before,
+.menu-icon span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(173, 133, 135);
+	transition: all 0.3s ease;
+}
+.menu-icon span::before{
+	transform: translateY(-6px);
+}
+.menu-icon.active span::before{
+	transform: rotate(45deg);
+}
+.menu-icon span::after{
+	transform: translateY(6px);
+}
+.menu-icon.active span::after{
+	transform: rotate(135deg);
+}
+
+/* @@@@@@@@@@@@@ HEADER DROPDOWN MENU @@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 920px) {
+  header .user{
+		display: none;
+	}
+  header img{
+		height: 35px;
+    justify-content: center;
+	}
+	header,
+  .container,
+  .row-h{
+		height: 45px;
+	}
+  header .row-h{
+    position: relative;
+  }
+  header .row-h .menu-icon{
+    display: block;
+    position: absolute;
+    right: 5px;
+  }
+
+
+  header .row-h .nav{
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width:100%;
+    max-height: 0px;
+    padding: 0px ;
+    overflow: hidden;
+    /* visibility: hidden; */
+    transition: all 0.5s ease;
+    background-color: #fae9e9;
+    border-top:1px solid rgba(161, 159, 159, 0.2);
+  }
+  .header .nav.open{
+    visibility: visible;
+  }
+	header .nav ul{
+    display: flex;
+    flex-direction: column;
+	  }
+	  header .nav ul li{
+		border-bottom: 1px solid #d3d4d3;
+    margin: 0;
+	  }
+	  header nav li:hover{
+		border-top: none;
+    border-bottom: 1px solid rgb(160, 122, 124);
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ============ MAIN FULL BACKGROUND ========== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+main .first{
+    height: 650px;
+    width: 100%;
+    background-image: url('/Images/new/hero.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+}
+main .fullpic .text{
+    padding-left: 5%;
+    padding-top: 12%;
+    width: 45%; 
+    line-height: 1;
+    color: white;
+}
+main .fullpic button{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    color: #333;
+}
+main .fullpic button:hover{
+    color: #8d6b7e;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 920px) {
+  main .first{
+    height: 410px;
+    width: 100%;
+    background-image: url('/Images/new/first-full.jpg');
+}
+main .fullpic .text{
+    padding-left: 2%;
+    padding-top: 5%;
+    width: 35%; 
+}
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 550px) {
+  main .first{
+    height: 400px;
+    width: 100%;
+    background-image: url('/Images/new/first-full.jpg');
+    margin-bottom: 20px;
+}
+main .fullpic .text{
+    padding-left: 2%;
+    padding-top: 10%;
+    width: 85%; 
+}
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@22 */
+/* ============== LOGO IPSUM ==================*/
+.swiper {
+  width: 100%;
+  height: 70%;
+}
+.swiper-wrapper{
+  height: 75px !important;
+}
+
+.swiper-slide {
+  height: 55px !important;
+  width: 15%;
+  padding: 5px 8px;
+  /* margin: 10px 0px; */
+  border: 1px solid rgb(216, 215, 215) ;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.swiper-pagination{
+  position: inherit !important;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @media screen and (max-width: 920px) {
+  main .logo-ipsum img{
+    height: 80px;
+    width: 17%;
+    padding: 0px 2%;
+    margin: 10px 10px;
+    border: 1px solid rgb(218, 216, 216) ;
+}
+} */
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ===============TRNDING PRODUCTS ================ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+main .trends{
+    /* background-color: aquamarine; */
+    height: 100px;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 1;
+}
+main .trend-products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "titem1 titem2 titem3 titem4" ;
+    grid-gap: 15px
+}
+main .trend-products #timg{
+    height: 300px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@ CART HOVER @@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+main .titem{
+  position: relative;
+}
+.titem:hover .cart-hover {
+  display: block;
+} .cart-hover{
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: white;
+  width: 35px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 4PX;
+  box-shadow: 0px 3px 4px 1px #b1afaf;
+  cursor: pointer;
+}
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 800px){
+  main .trend-products #timg{
+    height: 280px;
+    
+}
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 740px){
+  main .trend-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "titem1 titem2" "titem3 titem4" ;
+    grid-gap: 15px
+}
+main .trend-products #timg{
+    height: 280px;
+    border-radius: 3px;
+}
+main .trend-products p{
+  text-align: left !important;
+}
+}
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ============= FIVE STAR RATING ================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.rate {
+    float: left;
+    height: 25px;
+    padding: 0;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:25px;
+    color:#b4b3b3;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #fa6bba;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ec71d2;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #f047d4;
+}
+
+#timg{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 820px){
+  .rate:not(:checked) > label{
+    font-size: 18px;
+  }
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*  ================= BEST SELLING ================ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+main .best-sell{
+    /* background-color: rgb(187, 137, 119); */
+    height: 150px;
+    padding-top: 30px;
+    text-align: center;
+}
+main .best-products{
+    /* background-color: rgb(147, 219, 252); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "titem1 titem2 titem3 titem4" ;
+    height: 500px;
+    grid-gap: 15px
+}
+main .best-products img{
+  height: 300px;
+    border-radius: 3px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 800px){
+  main .best-products #timg{
+    height: 280px;
+    
+}
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 740px){
+  main .best-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "titem1 titem2" "titem3 titem4" ;
+    height: auto;
+    grid-gap: 15px
+}
+main .trend-products #timg{
+    height: 280px;
+    border-radius: 3px;
+}
+main .trend-products p{
+  text-align: left !important;
+}
+}
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@ CART HOVER @@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+main .best-products .titem{
+  position: relative;
+}
+.best-products .titem:hover .cart-hover {
+  display: block;
+} 
+.best-products .cart-hover{
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: white;
+  width: 35px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 4PX;
+  box-shadow: 0px 3px 4px 1px #b1afaf;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ============== SECOND FULL PIC ================ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+main .second{
+    position: inherit;
+    height: 600px;
+    background-image: url('/Images/new/second-full.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+main .txt{
+    padding-left: 5%;
+    padding-top: 10%;
+    line-height: 1;
+    width: 45%; 
+    color: white;
+}
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 920px) {
+  main .second{
+    height: 450px;
+    margin-top: 40px;
+}
+main .txt{
+    padding-left: 2%;
+    padding-top: 10%;
+    width: 40%; 
+    color: white;
+}
+}
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ============== REVIEWS =================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2@ */
+main .reviews{
+    padding-top: 45px;
+    height: 850px;
+    display: flex;
+    font-family: 'Marcellus', sans-serif;
+    font-size: 17px;
+}
+main .reviews .right{
+  width: 1800px;
+    padding-right: 25px;
+}
+main .reviews .left{
+    padding: 0px 40px;
+}
+main .reviews .nme{
+    color: #918f8f;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 850px){
+  main .reviews{
+    height: 850px;
+  }
+  main .reviews .left{
+      font-size: 15px;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 770px){
+  main .reviews{
+    padding-top: 45px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+main .reviews .right{
+  width: 100%;
+  line-height: 1;
+}
+main .reviews .right h2{
+  font-size: 28px !important;
+}
+main .reviews .left{
+  padding: 0px;
+}
+}
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ========= COLLECTION =========== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2 */
+main .collection{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+main .collection .cllr{
+    width: 49%;
+    line-height: 1;
+    background-image: url('/Images/new/left.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #faf8f4;
+}
+main .collection .cllf{
+    width: 49%;
+    line-height: 1;
+    background-image: url('/Images/new/brownedit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #974589;
+}
+main .collection .txxt{
+    padding-left: 6%;
+    padding-top: 7%;
+    width: 40%; 
+    font-size: small;
+}
+main .collection button{
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  width: 110px;
+  height: 40px;
+  color: #333;
+}
+main .collection button:hover{
+  color: #705665;
+}
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 920px){
+  main .collection{
+    height: 300px;
+}
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 720px){
+  main .collection{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+main .collection .cllr,
+main .collection .cllf{
+  width: 100%;
+  height: 300px;
+}
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 470px){
+  main .collection .cllr,
+  main .collection .cllf{
+    width: 100%;
+    height: 250px;
+  
+  }
+}
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ============ WHY US ========= */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+main .why-us{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "coca head coca 01 coca 02 coca 03" ;
+    height: 250px;
+    grid-gap: 15px;
+    padding-top: 35px;
+    font-family: 'Marcellus', sans-serif;
+}
+main .why-us img{
+    background-color: rgb(192, 147, 163);
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+main .why-us h1{
+    font-size: 23px;
+}
+main .why-us .coca{
+    padding: 0px 10px;
+}
+main .why-us .coca .head{
+    width: 40%;
+}
+main .why-us .plain{
+    display: flex;
+}
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 880px){
+  main .why-us{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "head head head"
+    "one two three" ;
+    height: 250px;
+    grid-gap: 15px;
+    padding-top: 25px;
+}
+main .why-us .head{
+  grid-area: head;
+  align-self: center;
+  text-align: center;
+}
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 660px){
+  main .why-us{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+}
+main .why-us h1{
+  font-size: 20px !important;
+}
+main .why-us p{
+  font-size: 12px !important;
+}
+main .why-us .coca{
+  padding: 0px 20px;
+  align-items: center;
+}
+main .why-us .plain{
+  display: flex;
+  justify-content: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ===================== FOOTER ===================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+footer{
+    background-color: rgb(246,237,240);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+footer .subscribe{
+    padding: 3% 2%;
+    border-bottom : 1px solid rgb(224, 202, 218);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 40px;*/
+} 
+footer .subscribe button{
+  background-color: black;
+  width: 185px;
+  height: 35px;
+}
+footer .subscribe p{
+    font-family: 'Marcellus', sans-serif;
+    font-size: 30px;
+}
+.sub{
+    border-color: black;
+    color: white;
+}
+.sub:hover{
+    background-color: rgb(212,166,182);
+    border-color:rgb(212,166,182);
+    color: white;
+}
+footer .subscribe input{
+    padding: 5px 0px;
+}
+footer .subscribe input:focus{
+  outline: none;
+    border-color: #b9b9b9;
+}
+/* ======= FOOTER LINKS ======== */
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgb(224, 202, 218);
+    padding: 3% 2%
+}
+footer .bs{
+    display: flex;
+}
+footer .footer-links nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer .footer-links li {
+    list-style: none;
+    text-decoration: none;
+    /* margin-right: 20px; */
+  }
+  
+  footer .footer-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer .footer-links a:hover {
+    color: #8d6b7e;
+}
+footer .footer-text{
+    padding: 1% 2%;
+}
+
+/* ========== SOCIAL MEDIA ======== */
+footer .social-media{
+  margin-right: 28px;
+}
+.fa {
+    padding: 2px;
+    font-size: 15px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  
+  .fa-facebook {
+    background: rgb(39, 39, 39);
+    color: white;
+  }
+  .fa-twitter {
+    font-size: 17px;
+    background: rgb(246,237,240);
+    color: rgb(55, 121, 243);
+  }
+  .fa-instagram {
+    background: rgb(39, 39, 39);
+    color: white;
+  }
+  .fa-twitter:hover{
+    background: white;
+    color: #ec71d2; 
+  }
+  .fa-instagram {
+    background: rgb(39, 39, 39);
+    color: white;
+  }
+  .fa:hover {
+    opacity: 0.7;
+    background-color: #f08fdb;
+    color: white;
+  }
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ================== FOOTER RESPONSIVE ==================== */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2@2 */
+
+@media screen and (max-width: 600px) {
+  footer .subscribe p{
+    font-size: 20px;
+  }
+  footer .subscribe{
+    padding: 2% 2%;
+  } 
+  footer .subscribe .sub-input{
+    width: 200px;
+    padding-left: 50px;
+  }
+  footer .subscribe input{
+    padding: 3px 0px;
+    width: 150px;
+    margin-bottom: 8px;
+  }
+  footer .subscribe button{
+    background-color: #232423;
+    width: 150px;
+    height: 25px;
+
+  }
+  footer .footer-text{
+    padding: 1% 2%;
+    font-size: 15px;
+}
+footer img{
+  height: 35px;
+}
+footer .social-media{
+  margin-right: 0px;
+}
+  /* =======LINK SECTION ========= */
+  footer .links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(224, 202, 218);
+    padding: 2% 2%
+  }
+  footer .bs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  footer .footer-links ul{
+    padding: 0;
+  }
+  }
+  /* =========== SMALL MOBILE SCREN ================ */
+
+  @media screen and (max-width: 460px) {
+    footer .subscribe p{
+      font-size: 18px;
+    }
+    footer .subscribe{
+      display: flex;
+      flex-direction: column;
+    } 
+    footer .subscribe .sub-input{
+      width: 100%;
+      justify-content: center;
+      padding-left: 10px;
+    }
+    footer .footer-text{
+      padding: 1% 2%;
+      font-size: 10px;
+    }
+    footer .links{
+      font-size: 15px;
+    }
+  }
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  /* @@@@@@@@@@@@@@@@@@@@@@@@======== FOOTER END =======@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+
+
+
+
+
+
