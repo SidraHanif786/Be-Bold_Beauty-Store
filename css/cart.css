@@ -18,7 +18,6 @@ body h1, body h2{
 /* ================HEADER================== */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 header .container{
-	max-width: 1570px;
 	margin:0px;
   padding: 0;
 }
@@ -211,13 +210,14 @@ footer .subscribe input{
     padding: 5px 0px;
 }
 footer .subscribe input:focus{
+  outline: none;
     border-color: #b9b9b9;
 }
 /* ======= FOOTER LINKS ======== */
 footer .links{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
     border-bottom: 1px solid rgb(224, 202, 218);
     padding: 3% 2%
 }
@@ -309,6 +309,7 @@ footer .social-media{
     margin-bottom: 8px;
   }
   footer .subscribe button{
+    background-color: #232423;
     width: 150px;
     height: 25px;
 

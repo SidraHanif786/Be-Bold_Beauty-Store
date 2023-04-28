@@ -152,7 +152,6 @@ body{
 /* ================HEADER================== */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 header .container{
-	max-width: 1570px;
 	margin:0px;
   padding: 0;
 }
@@ -355,7 +354,7 @@ outline: none;
 footer .links{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  /* width: 100%; */
   border-bottom: 1px solid rgb(224, 202, 218);
   padding: 3% 2%
 }
