@@ -19,8 +19,11 @@ body{
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* ============     CHECKOUT PAGE       ============= */
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
+main .details{
+  display: flex;
+}
 .flex-div{
+    flex-grow:1;
     display: flex;
     padding: 0;
     margin: 0;
@@ -85,6 +88,15 @@ body{
   
   
   /* =============== PLACE ORDER DIV ================ */
+  main .o-container{
+    position: sticky;
+  top: 50px;
+  height: 70vh;
+  overflow-y:auto;
+  flex-shrink: 0;
+  margin-left: 20px; 
+  margin-bottom: 20px;
+  }
   main .o-container {
     width: calc(40% - 20px);
     padding-left: 20px;
@@ -139,8 +151,10 @@ body{
       flex-direction: column;
     }
     .info, .o-container {
-      width: 100%;
-      padding: 0;
+      height: fit-content !important;
+      width: 100% !important;
+      margin-left: 0px !important;
+      padding-left: 0px !important;
     }
   }
 

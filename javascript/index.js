@@ -1,6 +1,7 @@
 // ========== HEADER MENU ICON ============
 
-const menu = document.querySelector(".menu-icon"); menu.addEventListener("click", dropdownMenu);
+const menu = document.querySelector(".menu-icon"); 
+menu.addEventListener("click", dropdownMenu);
 
 function dropdownMenu() {
  menu.classList.toggle("active");
